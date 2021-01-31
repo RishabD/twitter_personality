@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+html{
+  min-height: 100%;
+  margin: 0;
+}
+body{
+  margin: 0;
+  min-height: 100%;
+  background: rgb(17,222,165);
+  background: linear-gradient(180deg, rgba(17,222,165,1) 0%, rgba(0,255,252,1) 39%, rgba(13,168,255,1) 95%);
+}
+.button{
+  margin: 10px auto;
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.6), 0 6px 20px 0 rgba(1, 1, 1, 0.45);
+}
+.button:hover{
+  transition-duration: 0.3s;
+  color:white;
+  background-color:black;
+  cursor: pointer;
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  color: black;
+  margin-top: 50px;
+  text-align: center;
+  font-size:60px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.header{
+  width: 100%;
+  height: 70px;
+}
+.message{
+  height: 70px;
+  padding-top: 25px;
+  font-size:20px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.description{
+  height: 140px;
+  padding-top: 25px;
+  font-size:40px;
+  width: 1000px;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: auto;
+}
+
+.link{
+  width: 100px;
+  float: left;
+  height: 50px !important;
+  margin: 10px;
+  padding-top: 15px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.4), 0 6px 20px 0 rgba(1, 1, 1, 0.3);
+}
+
+.link:hover{
+  background-color: black;
+  color: white;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.content{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.top-message{
+  margin-top: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 40px;
+}
+
+.middle-message{
+  margin-top: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 120px;
+}
+
+.bottom-message{
+  margin-top: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+.active{
+  width: 100px;
+  float: left;
+  height: 50px;
+  background-color: black;
+  color: white;
+  margin: 10px;
+  padding-top: 15px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.4), 0 6px 20px 0 rgba(1, 1, 1, 0.3);
+}
+
+.list_element{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  width: 10%;
+  height: 30px;
+  background-color
+  display: block;
+  float: left;
+  text-align: center;
+  padding-top: 5px;
+}

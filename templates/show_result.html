@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'input.css')}}">
+    <title>Results</title>
+  </head>
+  <body>
+    <div class = "header">
+      <div onclick = "window.location.href = '{{url_for('index')}}'" class = "link" >
+        Home
+      </div>
+      <div onclick = "window.location.href = '{{url_for('explore')}}'" class = "link" >
+        Explore
+      </div>
+    </div>
+    <div class="content">
+      <div class="top-message">
+        @{{uname}}'s MBTI type is:
+      </div>
+      <div class="middle-message">
+        {{mbti_type}}
+      </div>
+      <div class="bottom-message">
+        {{message}}
+      </div>
+    </div>
+
+  </body>
+</html>

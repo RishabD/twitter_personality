@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'input.css')}}">
+  </head>
+  <body>
+    <div class = "header">
+      <div onclick = "window.location.href = '{{url_for('index')}}'" class = "link" >
+        Home
+      </div>
+      <div onclick = "window.location.href = '{{url_for('explore')}}'" class = "link" >
+        Explore
+      </div>
+    </div>
+    <div class="content">
+      <div class="title">
+        Twitter Personality
+      </div>
+      <div class="message">
+        {{message}}
+      </div>
+    <form id = "uname_form" action="/show_result" method="post">
+      <div class="group">
+      <input type="text" name = "uname" required autocomplete="off">
+      <span class="highlight"></span>
+      <span class="bar"></span>
+      <label>Username</label>
+      </div>
+        <div class = "button submit" onclick = 'document.getElementById("uname_form").submit()'>Submit</div>
+    </form>
+    <div class="description">
+      Enter the the Twitter username of an individual to find their MBTI (Meyers Briggs Type Indicator).
+    </div>
+
+    </div>
+  </body>
+</html>

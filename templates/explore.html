@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Explore</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'input.css')}}">
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename = 'explore.js')}}" charset="utf-8"></script>
+    <div class = "header">
+      <div onclick = "window.location.href = '{{url_for('index')}}'" class = "link" >
+        Home
+      </div>
+      <div onclick = "window.location.href = '{{url_for('explore')}}'" class = "link" >
+        Explore
+      </div>
+    </div>
+    <div class="container">
+      <div class="title" style = "font-size:70px; margin-bottom: 30px;">
+        Explore
+      </div>
+      <div class = "header">
+        <div id = "INTJ" class = "link" onclick = "make_active(this)" >
+          INTJ
+        </div>
+        <div id = "INTP" class = "link" onclick = "make_active(this)">
+          INTP
+        </div>
+        <div id = "ENTJ" class = "link " onclick = "make_active(this)">
+          ENTJ
+        </div>
+        <div id = "ENTP" class = "link" onclick = "make_active(this)">
+          ENTP
+        </div>
+        <div id = "INFJ" class = "link" onclick = "make_active(this)">
+          INFJ
+        </div>
+        <div id = "INFP" class = "link" onclick = "make_active(this)">
+          INFP
+        </div>
+        <div id = "ENFJ" class = "link" onclick = "make_active(this)">
+          ENFJ
+        </div>
+        <div id = "ENFP" class = "link" onclick = "make_active(this)">
+          ENFP
+        </div>
+        <div id = "ISTJ" class = "link" onclick = "make_active(this)">
+          ISTJ
+        </div>
+        <div id = "ISFJ" class = "link" onclick = "make_active(this)">
+          ISFJ
+        </div>
+        <div id = "ESTJ" class = "link" onclick = "make_active(this)">
+          ESTJ
+        </div>
+        <div id = "ESFJ" class = "link" onclick = "make_active(this)">
+          ESFJ
+        </div>
+        <div id = "ISTP" class = "link" onclick = "make_active(this)">
+          ISTP
+        </div>
+        <div id = "ISFP" class = "link" onclick = "make_active(this)">
+          ISFP
+        </div>
+        <div id = "ESTP" class = "link" onclick = "make_active(this)">
+          ESTP
+        </div>
+        <div id = "ESFP" class = "link" onclick = "make_active(this)">
+          ESFP
+        </div>
+      </div>
+      <div id ="unames">
+      </div>
+    </div>
+  </body>
+</html>
